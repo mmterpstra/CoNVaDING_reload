@@ -14,7 +14,7 @@ WriteMakefile
 		'Getopt::Long' => '2.45',
                 'List::Util' => '1.41',
                 'Math::Complex' => '1.59',
-                'POSIX' => '1.53_01',
+                'POSIX' => '1.53',
                 'Statistics::Normality' => '0.01',
                 'File::Temp' => '0.2304',
 	},
