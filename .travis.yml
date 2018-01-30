@@ -1,5 +1,5 @@
 language: perl
 perl:
   - "5.22"
-after_failure:
-  - eval cpanm --installdeps --notest .
+before_install:
+  - cpanm --installdeps --notest . || (tail -n 5000 /home/travis/.cpanm/work/*/build.log && exit 1)
