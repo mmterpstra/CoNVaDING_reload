@@ -1,4 +1,5 @@
 language: perl
 perl:
   - "5.22.1"
-
+after_failure
+  - eval cpanm --installdeps --notest .
